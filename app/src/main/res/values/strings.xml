@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Product List Demo</string>
+    <string name="search_hint">Search student</string>
+</resources>

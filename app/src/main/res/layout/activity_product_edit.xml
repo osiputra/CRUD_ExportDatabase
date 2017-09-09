@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.productlistdemo.Products.ProductEdit">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:gravity="center|right"
+            android:text="Nama Produk :"/>
+
+        <EditText
+            android:id="@+id/namaProdukEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView"
+            android:text="Unit :"
+            android:gravity="center|right"/>
+
+        <EditText
+            android:id="@+id/unitEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Harga :"
+            android:gravity="center|right"
+            android:layout_below="@id/textView2"/>
+
+        <EditText
+            android:id="@+id/priceEdt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:layout_below="@+id/unitEdt"
+            android:layout_toEndOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:text="Foto :"
+            android:gravity="center|top|right"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/imageProductImv"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/no_image"
+            android:layout_above="@+id/choiceImageBtn"
+            android:layout_alignStart="@+id/priceEdt" />
+
+        <Button
+            android:id="@+id/choiceImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Pilih Gambar"
+            android:textSize="12dp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/imageProductImv"
+            android:layout_alignEnd="@+id/imageProductImv" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="#1e2db4"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:text="Edit" />
+    </LinearLayout>
+
+</RelativeLayout>
+
